@@ -1,68 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="wrap_content"
     android:layout_width="wrap_content"
-    android:layout_gravity="center">
-
-<HorizontalScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_height="match_parent"
-    android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:gravity="bottom">
-
+    android:layout_gravity="center_vertical"
+    >
 
     <ScrollView
         android:id="@+id/scroll"
-        android:background="@color/colorPrimary"
-
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-    <HorizontalScrollView
-        android:id="@+id/hscroll"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-    <TextView
-        android:id="@+id/textview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="24px"
-        android:isScrollContainer="true"/>
-</HorizontalScrollView>
-</LinearLayout>
+        android:background="@color/colorPrimary">
 
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:layout_gravity="center">
+<!--        <VerticalScrollView-->
+<!--            android:id="@+id/hscroll"-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="fill_parent">-->
+
+            <TextView
+                android:id="@+id/textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isScrollContainer="true"
+                android:text="13sdvsvswvwvwevwevwevwevwevwevwev2sdf "
+                android:textSize="500px"/>
+<!--        </VerticalScrollView>-->
+    </ScrollView>
 
 
 
-        <Button
-            android:id="@+id/button1"
-            android:text="+"
+
+
+<!--    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent" >-->
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_height="wrap_content"
-            android:layout_width="wrap_content" />
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/button1"
+                android:text="+"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
 
 
-        <Button
-            android:id="@+id/button2"
-            android:text="view"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content" />
+            <Button
+                android:id="@+id/button2"
+                android:text="view"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
 
-        <Button
-            android:id="@+id/button3"
-            android:text="add thing"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content" />
+            <Button
+                android:id="@+id/button3"
+                android:text="add thing"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
 
-        <Button
-            android:id="@+id/button4"
-            android:text="-"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content" />
-    </LinearLayout>
-    </LinearLayout>
+            <Button
+                android:id="@+id/button4"
+                android:text="-"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+        </LinearLayout>
+<!--    </RelativeLayout>-->
+
+</RelativeLayout>
+
