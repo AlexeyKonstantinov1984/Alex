@@ -18,9 +18,6 @@ public void onloginClick(View view)
 {
    Intent intent = new Intent (login.this, MainActivity.class) ;
    startActivity(intent);
-
-
-
 }
 
 
