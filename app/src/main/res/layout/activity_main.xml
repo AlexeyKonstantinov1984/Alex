@@ -1,55 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+
+
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_width="match_parent"
+    android:layout_gravity="center_vertical"
+    >
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/colorPrimary">
+
+        <TableLayout
+            android:id="@+id/tablelayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TableRow>
+                <TextView
+                    android:text="ID товара"
+                    android:textSize="25dp"
+                    android:padding="10dip"
+                    />
+                <TextView
+                    android:text="товар"
+                    android:textSize="25dp"
+                    android:padding="10dip" />
+                <TextView
+                    android:text="Количество"
+                    android:textSize="25dp"
+                    android:padding="10dip" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
 
     <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="bottom"
-        android:background="@color/colorPrimaryDark">
-        <LinearLayout
-            android:gravity="center"
-            android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/button1"
+            android:text="+"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:background="@color/colorPrimary">
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="back"
-                android:id="@+id/B1"
-                android:onClick="onMainActivityClick"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="B2"
-                android:id="@+id/B2"></Button>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="B3"
-                android:id="@+id/B3"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="B4"
-                android:id="@+id/B4"/>
+            android:layout_width="wrap_content"
+            android:onClick="onMainActivityClick"/>
 
 
-        </LinearLayout>
-        <androidx.legacy.widget.Space
-            android:layout_width="match_parent"
-            android:layout_height="20dp"/>
+        <Button
+            android:id="@+id/button2"
+            android:text="view"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
 
+        <Button
+            android:id="@+id/button3"
+            android:text="add thing"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+
+        <Button
+            android:id="@+id/button4"
+            android:text="-"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
     </LinearLayout>
+</RelativeLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--<androidx.constraintlayout.widget.ConstraintLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".MainActivity">-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical"-->
+<!--        android:gravity="bottom"-->
+<!--        android:background="@color/colorPrimaryDark">-->
+<!--        <LinearLayout-->
+<!--            android:gravity="center"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:background="@color/colorPrimary">-->
+<!--            <Button-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="back"-->
+<!--                android:id="@+id/B1"-->
+<!--                android:onClick="onMainActivityClick"/>-->
+<!--            <Button-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="B2"-->
+<!--                android:id="@+id/B2"></Button>-->
+<!--            <Button-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="B3"-->
+<!--                android:id="@+id/B3"/>-->
+<!--            <Button-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="B4"-->
+<!--                android:id="@+id/B4"/>-->
+
+
+<!--        </LinearLayout>-->
+<!--        <androidx.legacy.widget.Space-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="20dp"/>-->
+
+<!--    </LinearLayout>-->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
 
 
 
